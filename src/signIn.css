@@ -1,0 +1,21 @@
+.formSignIn{
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    border: 5px solid #888;
+    width: 50%;  
+}
+.inputBox{
+    padding: 10px;
+    margin-top: 5px;
+    width: 95%;
+    margin-bottom: 10px;
+    background-color:#f1f1f1;
+}
+.signInButton{
+    padding: 10px;
+    background-color:green;
+    color:white;
+    margin-left: 10px;
+    width: 20%;
+    margin-bottom: 10px;
+}

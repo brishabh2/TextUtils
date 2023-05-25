@@ -1,0 +1,22 @@
+.container {
+  margin-right: 25%;
+  margin-left: 25%;
+  margin-top: 50px; 
+  }
+.button{
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: green;
+  color:white;  
+  padding: 9px;
+}
+.textBox{
+  width: 100%;
+}
+.textAlign{
+  text-align: center;
+  margin-top: 50px;
+}
+.textSummary{
+  margin-top: 20px;
+}

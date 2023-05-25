@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import Text from "./Text.js";
+import Navbar from "./Navbar.js";
+import About from "./About.js";
+import Home from "./Home.js";
+import signUp from "./signUp.js";
+import signIn from "./signIn.js";
+import { Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/signUp" component={signUp} />
+        <Route exact path="/signIn" component={signIn} />
+        <Route
+          exact
+          path="/textUtils"
+          render={(props) => (
+            <Text heading="Enter the text to analyse below" {...props} />
+          )}
+        />
+      </Switch>
+    </>
   );
 }
 
